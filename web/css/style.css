@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  background: #18171b;
+  color: #ffffff;
+}
+.page-section {
+  padding: 40px;
+  position: relative;
+}
+.page-section.-gray-200 {
+  background: #eeeeee;
+  color: #18171b;
+}
+.page-section.-gray-300 {
+  background: #e0e0e0;
+  color: #18171b;
+}
+.table-default {
+  margin: -10px;
+}
+.table-default table {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate;
+  text-align: left;
+}
+.table-default table td,
+.table-default table th {
+  background: #18171B;
+  padding: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.table-default table th {
+  white-space: nowrap;
+  background: #ffffff;
+}
+.table-default table th small {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+}
