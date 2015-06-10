@@ -13,9 +13,20 @@ body {
   background: #18171b;
   color: #ffffff;
 }
+a {
+  color: #e91e63;
+  text-decoration: none;
+}
+a:hover {
+  color: #f27ba3;
+}
 .page-section {
   padding: 40px;
   position: relative;
+}
+.page-section.-white {
+  background: #ffffff;
+  color: #18171b;
 }
 .page-section.-gray-200 {
   background: #eeeeee;
@@ -24,6 +35,29 @@ body {
 .page-section.-gray-300 {
   background: #e0e0e0;
   color: #18171b;
+}
+.page-heading > h1 {
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: -15px;
+  margin: 0;
+}
+.page-heading > h1 a {
+  color: #18171b;
+}
+.page-heading > h1 a .char6 {
+  color: #e91e63;
+}
+.page-heading > p {
+  display: inline-block;
+  background: #e91e63;
+  color: #ffffff;
+  padding: 10px 40px;
+  margin-left: -40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .table-default {
   margin: -10px;

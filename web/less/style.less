@@ -26,10 +26,27 @@ body
     color: @white;
 }
 
+a
+{
+    color: @brand;
+    text-decoration: none;
+
+    &:hover
+    {
+        color: lighten(@brand, 20%)
+    }
+}
+
 .page-section
 {
     padding: @u;
     position: relative;
+
+    &.-white
+    {
+        background: @white;
+        color: @black;
+    }
 
     &.-gray-200
     {
@@ -41,6 +58,40 @@ body
     {
         background: @gray-300;
         color: @black;
+    }
+}
+
+.page-heading
+{
+    > h1
+    {
+        font-size: 100px;
+        line-height: 100px;
+        letter-spacing: -15px;
+        margin: 0;
+
+        a
+        {
+            color: @black;
+
+            .char6
+            {
+                color: @brand;
+            }
+        }
+    }
+
+    > p
+    {
+        display: inline-block;
+        background: @brand;
+        color: @white;
+        padding: @u/4 @u;
+        margin-left: -@u;
+        font-weight: bold;
+        letter-spacing: -1px;
+        border-top-right-radius: @border-radius;
+        border-bottom-right-radius: @border-radius;
     }
 }
 

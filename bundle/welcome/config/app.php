@@ -2,7 +2,7 @@
 
 return [
 
-    'debug' => true,
+    'debug' => false,
 
     'encoding' => 'UTF-8',
 

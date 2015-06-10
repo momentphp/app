@@ -14,6 +14,8 @@
     {block 'content'}{/block}
     {block 'footer'}{/block}
 
+    {include file='welcome/element/queryLog.tpl'}
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     {block 'scripts'}{/block}
 
