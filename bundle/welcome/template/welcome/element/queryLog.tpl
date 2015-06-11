@@ -1,5 +1,12 @@
 {if isset($this->app->database)}
 
-    query log
+    {assign 'queryLog' $this->app->database->queryLog()}
+
+    {if $this->app->debug and !empty($queryLog)}
+        <div class="page-section">
+            <h2>Database queries</h2>
+            {$this->dump($queryLog)}
+        </div>
+    {/if}
 
 {/if}

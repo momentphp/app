@@ -19,6 +19,14 @@
 
 {block 'content'}
 
+    <div class="page-section -gray-200">
+
+        <a href="{$this->app->config->get('bundle.welcome.url.github')}" class="button-action">GitHub</a>
+        <a href="{$this->app->config->get('bundle.welcome.url.docs')}" class="button-action">Docs</a>
+        <a href="{$this->app->config->get('bundle.welcome.url.api')}" class="button-action">API</a>
+
+    </div>
+
     {include file='welcome/element/debugTable.tpl'}
 
 {/block}

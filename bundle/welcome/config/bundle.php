@@ -3,6 +3,11 @@
 return [
     'welcome' => [
         'title' => 'moment',
-        'description' => 'Lekki i bajecznie intuicyjny mini-framework PHP wspierający modułową budowę aplikacji'
+        'description' => 'Lightweight & intuitive PHP mini-framework enabling modular app design',
+        'url' => [
+            'github' => 'https://github.com/momentphp',
+            'docs' => 'http://momentphp.tk/docs',
+            'api' => 'http://momentphp.tk/docs'
+        ]
     ]
 ];

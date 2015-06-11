@@ -6,6 +6,8 @@ return [
 
     'encoding' => 'UTF-8',
 
+    'timezone' => 'UTC',
+
     'locale' => 'en',
 
 ];
