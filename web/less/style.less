@@ -1,11 +1,11 @@
 @u: 40px;
 @border-radius: 3px;
-@white: #fff;
+
 @black: #18171B;
+@white: #fff;
+@brand: #e91e63;
 @gray-200: #eee;
 @gray-300: #e0e0e0;
-@yellow: #fc0;
-@brand: #e91e63;
 
 html
 {
@@ -92,6 +92,11 @@ a
         letter-spacing: -1px;
         border-top-right-radius: @border-radius;
         border-bottom-right-radius: @border-radius;
+
+        a
+        {
+            color: lighten(@brand, 25%);
+        }
     }
 }
 
@@ -109,7 +114,6 @@ a
         td,
         th
         {
-            background: #18171B;
             padding: 20px;
             border-radius: @border-radius;
             overflow: hidden;
@@ -119,13 +123,44 @@ a
         {
             white-space: nowrap;
             background: @white;
+
+            small
+            {
+                display: block;
+                font-weight: normal;
+                font-size: 12px;
+            }
         }
 
-        th small
+        td
         {
-            display: block;
-            font-weight: normal;
-            font-size: 12px;
+            background: @black;
+            color: @white;
         }
+    }
+}
+
+.button-action
+{
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: @u/4 @u;
+    border: 2px solid @black;
+    letter-spacing: -1px;
+    text-align: center;
+    font-weight: bold;
+    color: @black;
+    border-radius: @border-radius;
+
+    &:hover
+    {
+        background: @black;
+        color: @white;
+    }
+
+    &:active
+    {
+        position: relative;
+        top: 2px;
     }
 }
