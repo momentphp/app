@@ -1,12 +1,6 @@
 {
     "name": "momentphp/app",
     "description": "Moment framework app skeleton",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "../framework"
-        }
-    ],
     "require": {
         "momentphp/framework": "*"
     },
