@@ -1,8 +1,16 @@
 <?php
 /**
- * Require Composer autoloader
+ * Discover & require Composer autoloader
  */
-require implode(DIRECTORY_SEPARATOR, [dirname(__DIR__), 'vendor', 'autoload.php']);
+$path = __DIR__;
+do {
+    $path = dirname($path);
+    $autoload = implode(DIRECTORY_SEPARATOR, [$path, 'vendor', 'autoload.php']);
+    if (file_exists($autoload)) {
+        require $autoload;
+        break;
+    }
+} while (dirname($path) !== $path);
 
 /**
  * Construct app instance with choosen bundles
