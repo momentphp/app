@@ -7,7 +7,7 @@ return [
         'url' => [
             'github' => 'https://github.com/momentphp',
             'docs' => 'http://momentphp.tk/docs',
-            'api' => 'http://momentphp.tk/docs'
+            'api' => 'http://momentphp.tk/api/index.html'
         ]
     ]
 ];
