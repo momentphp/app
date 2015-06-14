@@ -5,18 +5,18 @@ class HtmlHelper extends \moment\Helper
 {
     public function charset()
     {
-        return sprintf('<meta charset="%s">', $this->template->app->config->get('app.encoding', 'UTF-8'));
+        return sprintf('<meta charset="%s">', $this->app->config->get('app.encoding', 'UTF-8'));
     }
 
     public function title()
     {
         $title = [
-            $this->template->app->config->get('bundle.welcome.title'),
-            $this->template->app->config->get('bundle.welcome.description')
+            $this->app->config->get('bundle.welcome.title'),
+            $this->app->config->get('bundle.welcome.description')
         ];
-        if (!empty($this->template->vars['htmlTitle'])) {
+        if (!empty($this->view->vars['htmlTitle'])) {
             array_pop($title);
-            array_unshift($title, $this->template->vars['htmlTitle']);
+            array_unshift($title, $this->view->vars['htmlTitle']);
         }
         return implode(' | ', $title);
     }
@@ -24,8 +24,8 @@ class HtmlHelper extends \moment\Helper
     public function bodyClass()
     {
         $classes = [
-            strtolower($this->template->request->getAttribute('controller')),
-            strtolower($this->template->request->getAttribute('action'))
+            strtolower($this->view->request->getAttribute('controller')),
+            strtolower($this->view->request->getAttribute('action'))
         ];
         return implode(' ', $classes);
     }

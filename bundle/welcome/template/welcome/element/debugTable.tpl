@@ -61,10 +61,10 @@
                 </tr>
                 <tr>
                     <th>
-                        $app&rarr;bundle&rarr;loaded()
+                        $app&rarr;bundle&rarr;keys()
                         <small>Loaded bundles</small>
                     </th>
-                    <td>{$this->dump($this->app->bundle->loaded())}</td>
+                    <td>{$this->dump($this->app->bundle->keys())}</td>
                 </tr>
                 <tr>
                     <th>
