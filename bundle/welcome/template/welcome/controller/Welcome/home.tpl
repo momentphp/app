@@ -4,14 +4,7 @@
 
     <div class="page-section -white">
 
-        <div class="page-heading">
-            <h1>
-                <a href="{$this->app->router->urlFor('welcomeHome')}">{$this->app->config->get('bundle.welcome.title')}</a>
-            </h1>
-            <p>
-                {$this->app->config->get('bundle.welcome.description')}
-            </p>
-        </div>
+        {include file='welcome/element/logo.tpl'}
 
     </div>
 
@@ -22,7 +15,11 @@
     <div class="page-section -gray-200">
 
         <a href="{$this->app->config->get('bundle.welcome.url.github')}" class="button-action">GitHub</a>
-        <a href="{$this->app->config->get('bundle.welcome.url.docs')}" class="button-action">Docs</a>
+        {if $this->app->bundle->has('docs')}
+            <a href="{$this->app->router->urlFor('docsHome')}" class="button-action">Docs</a>
+        {else}
+            <a href="{$this->app->config->get('bundle.welcome.url.docs')}" class="button-action">Docs</a>
+        {/if}
         <a href="{$this->app->config->get('bundle.welcome.url.api')}" class="button-action">API</a>
 
     </div>
