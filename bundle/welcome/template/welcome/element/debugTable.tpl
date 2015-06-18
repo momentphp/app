@@ -20,7 +20,7 @@
                 <tr>
                     <th>
                         $app&rarr;environment
-                        <small>Server environment</small>
+                        <small>Server environment data</small>
                     </th>
                     <td>{$this->dump($this->app->environment)}</td>
                 </tr>
@@ -34,14 +34,14 @@
                 <tr>
                     <th>
                         $app&rarr;pathBase
-                        <small>Install path</small>
+                        <small>App skeleton installation path</small>
                     </th>
                     <td>{$this->dump($this->app->pathBase)}</td>
                 </tr>
                  <tr>
                     <th>
                         $app&rarr;pathWeb
-                        <small>Webserver path (DocumentRoot)</small>
+                        <small>Web server document root path</small>
                     </th>
                     <td>{$this->dump($this->app->pathWeb)}</td>
                 </tr>
@@ -51,6 +51,13 @@
                         <small>Temporary files path</small>
                     </th>
                     <td>{$this->dump($this->app->pathTmp)}</td>
+                </tr>
+                <tr>
+                    <th>
+                        $app&rarr;pathLog
+                        <small>Log files path</small>
+                    </th>
+                    <td>{$this->dump($this->app->pathLog)}</td>
                 </tr>
                 <tr>
                     <th>

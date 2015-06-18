@@ -8,7 +8,7 @@
             <p>
                 Method not allowed.<br>
                 Must be one of: {', '|implode:$methods}<br>
-                <a href="{$this->app->router->urlFor('welcomeHome')}">Visit the Home Page &rarr;</a>
+                <a href="/">Visit the Home Page &rarr;</a>
             </p>
         </div>
     </div>
