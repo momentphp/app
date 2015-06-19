@@ -9,4 +9,12 @@ $(document).ready(function(){
         }
     });
 
+    $('.particleground').particleground({
+        parallax: false,
+        particleRadius: 5,
+        lineColor: '#eeeeee',
+        dotColor: '#e5e5e5',
+        density: 10000
+    });
+
 });
