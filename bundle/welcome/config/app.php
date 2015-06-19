@@ -10,4 +10,10 @@ return [
 
     'locale' => 'en',
 
+    'service' => [],
+
+    'middleware' => [
+        'BundleAsset' => true
+    ]
+
 ];

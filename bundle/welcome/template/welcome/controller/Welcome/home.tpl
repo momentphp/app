@@ -2,7 +2,7 @@
 
 {block 'header'}
 
-    <div class="page-section -white">
+    <div class="particleground page-section -white">
 
         {include file='welcome/element/logo.tpl'}
 

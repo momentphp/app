@@ -1,7 +1,7 @@
 {extends file='welcome/layout/default.tpl'}
 
 {block 'content'}
-    <div class="page-section -white">
+    <div class="particleground page-section -white">
 
         <div class="page-heading">
             <h1>{$htmlTitle}</h1>

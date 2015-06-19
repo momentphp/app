@@ -17,6 +17,7 @@
     {include file='welcome/element/queryLog.tpl'}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="//cdn.rawgit.com/jnicol/particleground/master/jquery.particleground.js"></script>
     {block 'scripts'}{/block}
     <script src="/js/global.js"></script>
 
