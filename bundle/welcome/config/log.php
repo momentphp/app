@@ -2,8 +2,6 @@
 
 return [
 
-    'error' => 'error', // set to false to disable error logging
-
     'default' => 'app',
 
     'loggers' => [

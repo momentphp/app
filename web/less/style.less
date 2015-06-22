@@ -63,6 +63,9 @@ a
 
 .page-heading
 {
+    position: relative;
+    z-index: 1;
+
     > h1
     {
         font-size: 100px;
@@ -123,6 +126,7 @@ a
         {
             white-space: nowrap;
             background: @white;
+            color: @black;
 
             small
             {
@@ -162,5 +166,15 @@ a
     {
         position: relative;
         top: 2px;
+    }
+}
+
+.particleground
+{
+    canvas
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
