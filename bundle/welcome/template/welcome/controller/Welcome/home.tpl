@@ -2,7 +2,7 @@
 
 {block 'header'}
 
-    <div class="particleground page-section -white">
+    <div class="page-section -white particleground">
 
         {include file='welcome/element/logo.tpl'}
 
@@ -12,15 +12,16 @@
 
 {block 'content'}
 
-    <div class="page-section -gray-200">
+    <div class="page-section -gray-200 text-center">
 
         <a href="{$this->app->config->get('bundle.welcome.url.github')}" class="button-action">GitHub</a>
         {if $this->app->bundle->has('docs')}
             <a href="{$this->app->router->urlFor('docsHome')}" class="button-action">Docs</a>
+            <a href="{$this->app->router->urlFor('docsApi')}" class="button-action">API</a>
         {else}
             <a href="{$this->app->config->get('bundle.welcome.url.docs')}" class="button-action">Docs</a>
+            <a href="{$this->app->config->get('bundle.welcome.url.api')}" class="button-action">API</a>
         {/if}
-        <a href="{$this->app->config->get('bundle.welcome.url.api')}" class="button-action">API</a>
 
     </div>
 
