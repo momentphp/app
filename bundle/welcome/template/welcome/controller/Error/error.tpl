@@ -2,10 +2,10 @@
 
 {block 'content'}
 
-    <div class="page-section -white">
-        <div class="page-heading">
-            <h1>500</h1>
-            <p>
+    <div class="page-section -white particleground">
+        <div class="page-heading text-center">
+            <h1 class="title">500</h1>
+            <p class="description">
                 Internal server error.<br>
                 Try again later.<br>
                 <a href="/">Visit the Home Page &rarr;</a>

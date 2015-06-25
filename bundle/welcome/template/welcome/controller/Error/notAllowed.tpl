@@ -2,8 +2,8 @@
 
 {block 'content'}
 
-    <div class="particleground page-section -white">
-        <div class="page-heading">
+    <div class="page-section -white particleground">
+        <div class="page-heading text-center">
             <h1>{$htmlTitle}</h1>
             <p>
                 Method not allowed.<br>
