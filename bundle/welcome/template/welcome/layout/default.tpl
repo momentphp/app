@@ -10,6 +10,10 @@
 </head>
 <body class="{$this->Html->bodyClass()}">
 
+    {if $this->app->bundle->has('website')}
+        {include file='website/element/tracking.tpl'}
+    {/if}
+
     {block 'header'}{/block}
     {block 'content'}{/block}
     {block 'footer'}{/block}
