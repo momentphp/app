@@ -15,15 +15,13 @@ do {
 /**
  * Construct app instance with choosen bundles
  */
-$app = new moment\App([
-    new app\bundle\welcome\WelcomeBundle
-]);
+$app = new moment\App(['welcome']);
 
 /**
- * Define paths & environment (production by default)
+ * Define paths (and optionally environment - production by default)
  */
-$app->service('pathBase', dirname(__DIR__));
 $app->service('pathWeb', __DIR__);
+$app->service('pathBase', dirname(__DIR__));
 
 /**
  * Send response to the client
