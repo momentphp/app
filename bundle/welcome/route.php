@@ -1,4 +1,6 @@
 <?php
 
-$app->any('/', 'Welcome@home')->setName('home');
-$app->any('/welcome', 'Welcome@home');
+$app->any('/pages/{page:.+}', 'Pages@display');
+$app->any('/', function () use ($app) {
+    return $app->subRequest('GET', '/pages/home');
+})->setName('home');
