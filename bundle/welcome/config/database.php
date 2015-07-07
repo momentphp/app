@@ -2,6 +2,8 @@
 
 return [
 
+    'fetch' => PDO::FETCH_ASSOC,
+
     'default' => 'mysql',
 
     'connections' => [

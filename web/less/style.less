@@ -50,12 +50,22 @@ pre
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
+
+    &.sf-dump
+    {
+        background-color: transparent !important;
+    }
 }
 
 .page-section
 {
     padding: @u;
     position: relative;
+
+    &.-black
+    {
+        background: #000;
+    }
 
     &.-white
     {
