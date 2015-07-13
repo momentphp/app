@@ -15,7 +15,7 @@ do {
 /**
  * Construct app instance with choosen bundles
  */
-$app = new moment\App(['welcome']);
+$app = new moment\App(['welcome', 'docs']);
 
 /**
  * Define paths (and optionally environment - production by default)

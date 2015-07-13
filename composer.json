@@ -4,7 +4,8 @@
     "keywords": ["framework", "momentphp"],
     "homepage": "http://momentphp.com",
     "require": {
-        "momentphp/framework": "*"
+        "momentphp/framework": "*",
+        "momentphp/docs": "*"
     },
     "autoload": {
         "psr-4": {
