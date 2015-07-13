@@ -1,9 +1,5 @@
 <?php
 
 $app->any('/pages/{page:.+}', 'Pages@display');
-$app->any('/welcome', function () {
-    return $this->subRequest('GET', '/pages/home');
-});
-$app->any('/', function () {
-    return $this->subRequest('GET', '/pages/home');
-})->setName('home');
+$app->any('/welcome', 'Pages@display')->setArgument('page', 'home');
+$app->any('/', 'Pages@display')->setArgument('page', 'home')->setName('home');

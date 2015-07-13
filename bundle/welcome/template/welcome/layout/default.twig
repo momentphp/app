@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ this.Html.charset() }}
+    <title>{{ this.Html.title() }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="{{ this.Html.bodyClass() }}">
+
+    {% if this.app.bundle.has('website') %}
+        {% include 'website/element/tracking.twig' %}
+    {% endif %}
+
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}
+
+    {% include 'welcome/element/queryLog.twig' %}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="//cdn.rawgit.com/jnicol/particleground/master/jquery.particleground.js"></script>
+    {% block scripts %}{% endblock %}
+    <script src="/js/global.js"></script>
+
+</body>
+</html>

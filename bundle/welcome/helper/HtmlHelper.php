@@ -8,6 +8,11 @@ class HtmlHelper extends \moment\Helper
         return sprintf('<meta charset="%s">', $this->app->config->get('app.encoding', 'UTF-8'));
     }
 
+    public function test($d = 'default')
+    {
+        return 'test ' . $d;
+    }
+
     public function title()
     {
         $title = [

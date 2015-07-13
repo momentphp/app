@@ -12,10 +12,14 @@ return [
 
     'error' => [
         'level' => -1,
-        'logger' => false
+        'logger' => false,
     ],
 
+    'viewService' => 'twigView',
+
     'service' => [
+        'TwigView' => true,
+        'SmartyView' => false,
     ],
 
     'middleware' => [
