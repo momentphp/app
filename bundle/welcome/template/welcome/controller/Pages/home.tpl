@@ -3,7 +3,7 @@
 {block 'header'}
 
     <div class="page-section -white particleground">
-        {include file='welcome/element/logo.tpl'}
+        {$this->cell('Logo')}
     </div>
 
 {/block}
