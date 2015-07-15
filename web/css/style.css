@@ -1,3 +1,7 @@
+/**
+ * This stylesheet is using following CSS methodology:
+ * http://rscss.io
+ */
 html {
   box-sizing: border-box;
 }
@@ -133,11 +137,20 @@ pre.sf-dump {
   position: relative;
   top: 2px;
 }
-.text-center {
-  text-align: center;
-}
-.particleground canvas {
+.particle-ground canvas {
   position: absolute;
   top: 0;
   left: 0;
+}
+._center {
+  text-align: center !important;
+}
+._right {
+  text-align: center !important;
+}
+._pull-left {
+  float: left !important;
+}
+._pull-right {
+  float: right !important;
 }

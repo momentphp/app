@@ -2,7 +2,7 @@
 
 {block 'header'}
 
-    <div class="page-section -white particleground">
+    <div class="page-section -white particle-ground">
         {$this->cell('Logo')}
     </div>
 
@@ -10,7 +10,7 @@
 
 {block 'content'}
 
-    <div class="page-section -gray-200 text-center">
+    <div class="page-section -gray-200 _center">
         <a href="{$this->app->config->get('bundle.welcome.url.github')}" class="button-action">GitHub</a>
         {if $this->app->bundle->has('docs')}
             <a href="{$this->app->router->pathFor('docs')}" class="button-action">Docs</a>
@@ -27,7 +27,7 @@
 
 {block 'footer'}
 
-    <div class="page-section text-center">
+    <div class="page-section _center">
         Need help?<br>
         Join <strong>#momentphp</strong> IRC channel on <a href="https://freenode.net/">freenode</a><br>
         Write an email:

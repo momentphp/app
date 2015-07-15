@@ -1,4 +1,4 @@
-<div class="page-heading text-center">
+<div class="page-heading _center">
     <div class="logo">
         <img src="/img/logo.png" width="100" height="100" alt="">
     </div>

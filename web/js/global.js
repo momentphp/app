@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.particleground').particleground({
+    $('.particle-ground').particleground({
         parallax: false,
         particleRadius: 5,
         lineColor: '#eeeeee',
