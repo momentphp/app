@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $(document).on('click', 'a:not(.sf-dump-toggle)', function(event){
+    $(document).on('click', 'a:not(.sf-dump-toggle,.js-noexternal)', function(event){
         var a = new RegExp('/' + window.location.host + '/');
         if (!a.test(this.href)) {
             event.preventDefault();

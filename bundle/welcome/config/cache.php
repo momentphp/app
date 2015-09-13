@@ -2,7 +2,7 @@
 
 return [
 
-    'prefix' => app('bundle')->fingerprint(),
+    'prefix' => app('bundles')->joinAliases(),
 
     'default' => 'file',
 
@@ -10,7 +10,7 @@ return [
 
         'file' => [
             'driver' => 'file',
-            'path' => implode(DIRECTORY_SEPARATOR, [app('pathTmp'), 'cache', app('bundle')->fingerprint()]),
+            'path' => path([app('pathTmp'), 'cache', app('bundles')->joinAliases()]),
         ],
 
     ]

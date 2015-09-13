@@ -1,6 +1,7 @@
 /**
- * This stylesheet is using following CSS methodology:
- * http://rscss.io
+ * This stylesheet is following RSCSS methodology:
+ *
+ * @link http://rscss.io
  */
 html {
   box-sizing: border-box;
@@ -89,36 +90,36 @@ pre.sf-dump {
 .page-heading > .description a {
   color: #f492b4;
 }
-.table-default {
+.default-table {
   margin: -10px;
 }
-.table-default table {
+.default-table table {
   width: 100%;
   border-spacing: 10px;
   border-collapse: separate;
   text-align: left;
 }
-.table-default table td,
-.table-default table th {
+.default-table table td,
+.default-table table th {
   padding: 20px;
   border-radius: 3px;
   overflow: hidden;
 }
-.table-default table th {
+.default-table table th {
   white-space: nowrap;
   background: #ffffff;
   color: #18171b;
 }
-.table-default table th small {
+.default-table table th small {
   display: block;
   font-weight: normal;
   font-size: 12px;
 }
-.table-default table td {
+.default-table table td {
   background: #18171b;
   color: #ffffff;
 }
-.button-action {
+.action-button {
   transition: all 0.3s ease;
   display: inline-block;
   padding: 10px 40px;
@@ -129,11 +130,15 @@ pre.sf-dump {
   color: #18171b;
   border-radius: 3px;
 }
-.button-action:hover {
+.action-button.-fixed {
+  width: 120px;
+  padding: 10px 0;
+}
+.action-button:hover {
   background: #18171b;
   color: #ffffff;
 }
-.button-action:active {
+.action-button:active {
   position: relative;
   top: 2px;
 }
@@ -146,7 +151,7 @@ pre.sf-dump {
   text-align: center !important;
 }
 ._right {
-  text-align: center !important;
+  text-align: right !important;
 }
 ._pull-left {
   float: left !important;

@@ -1,6 +1,7 @@
 /**
- * This stylesheet is using following CSS methodology:
- * http://rscss.io
+ * This stylesheet is following RSCSS methodology:
+ *
+ * @link http://rscss.io
  */
 
 @u: 40px;
@@ -138,7 +139,7 @@ pre
     }
 }
 
-.table-default
+.default-table
 {
     margin: -@u/4;
 
@@ -179,7 +180,7 @@ pre
     }
 }
 
-.button-action
+.action-button
 {
     transition: all 0.3s ease;
     display: inline-block;
@@ -190,6 +191,12 @@ pre
     font-weight: bold;
     color: @black;
     border-radius: @border-radius;
+
+    &.-fixed
+    {
+        width: 120px;
+        padding: @u/4 0;
+    }
 
     &:hover
     {
@@ -215,6 +222,6 @@ pre
 }
 
 ._center { text-align: center !important; }
-._right { text-align: center !important; }
+._right { text-align: right !important; }
 ._pull-left { float: left !important; }
 ._pull-right { float: right !important; }

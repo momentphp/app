@@ -11,7 +11,7 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'moment',
+            'database'  => 'momentphp',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',

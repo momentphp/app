@@ -17,13 +17,13 @@ return [
 
     'viewService' => 'twigView',
 
-    'service' => [
+    'services' => [
         'TwigView' => true,
-        'SmartyView' => false,
+        'SmartyView' => true,
     ],
 
-    'middleware' => [
-        'BundleAsset' => true,
+    'middlewares' => [
+        'BundleAssets' => true,
     ]
 
 ];
