@@ -1,4 +1,4 @@
-/logs/*
+#/logs/*
 /tmp/*
 /vendor
 composer.lock
