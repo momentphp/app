@@ -6,7 +6,6 @@ class PagesController extends Controller
 {
     public function display($page)
     {
-        app('log')->addDebug('Foo', ['some' => 'data']);
         $this->template = $page;
         try {
             return $this->view()->render($this->template());

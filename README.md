@@ -1,4 +1,4 @@
-# MomentPHP framework app skeleton
+# MomentPHP | Framework app skeleton
 
 The framework source code can be found here: [momentphp/framework](https://github.com/momentphp/framework).
 

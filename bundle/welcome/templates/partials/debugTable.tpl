@@ -33,6 +33,13 @@
                 </tr>
                 <tr>
                     <th>
+                        $app&rarr;console
+                        <small>App console flag (<code>true</code> in CLI)</small>
+                    </th>
+                    <td>{$this->dump($this->app->console)}</td>
+                </tr>
+                <tr>
+                    <th>
                         $app&rarr;pathBase
                         <small>App skeleton installation path</small>
                     </th>

@@ -3,7 +3,7 @@
 return [
     'welcome' => [
         'title' => 'MomentPHP',
-        'description' => 'A wrapper for Slim Framework with unique bundle inheritance system and integrated Laravel Framework components',
+        'description' => 'The PHP mini-framework based on Slim and Laravel Components',
         'url' => [
             'download' => 'https://github.com/momentphp/app/archive/master.zip',
             'github' => 'https://github.com/momentphp',

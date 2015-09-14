@@ -1,6 +1,6 @@
 {
     "name": "momentphp/app",
-    "description": "MomentPHP app skeleton",
+    "description": "MomentPHP | Framework app skeleton",
     "keywords": ["framework", "momentphp"],
     "homepage": "http://momentphp.com",
     "require": {
