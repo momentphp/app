@@ -11,7 +11,7 @@
 </head>
 <body class="{{ this.Html.bodyClass() }}">
 
-    {% if this.app.bundle.has('website') %}
+    {% if this.app.bundles.has('website') %}
         {% include '@website/partials/tracking.twig' %}
     {% endif %}
 
