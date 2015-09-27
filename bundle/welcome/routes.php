@@ -1,5 +1,5 @@
 <?php
 
-$app->any('/pages/{page:.+}', 'PagesController:display');
-$app->any('/welcome', 'PagesController:display')->setArgument('page', 'home');
-$app->any('/', 'PagesController:display')->setArgument('page', 'home')->setName('home');
+$app->get('/pages/{page:.+}', 'PagesController:display');
+$app->get('/welcome', 'PagesController:display')->setArgument('page', 'home');
+$app->get('/', 'PagesController:display')->setArgument('page', 'home')->setName('home');

@@ -13,13 +13,17 @@ return [
     'error' => [
         'level' => -1,
         'logger' => false,
+        'skip' => [
+            \momentphp\exceptions\NotFoundException::class,
+            \momentphp\exceptions\NotAllowedException::class,
+        ]
     ],
 
-    'viewService' => 'twigView',
+    'viewService' => 'smarty',
 
-    'services' => [
-        'TwigView' => true,
-        'SmartyView' => true,
+    'providers' => [
+        'Twig' => true,
+        'Smarty' => true,
     ],
 
     'middlewares' => [

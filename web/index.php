@@ -14,18 +14,20 @@ do {
 } while (dirname($pathBase) !== $pathBase);
 
 /**
+ * Define paths (and optionally environment - production by default)
+ */
+$services = [
+    'pathBase' => $pathBase,
+    'pathWeb' => __DIR__,
+];
+
+/**
  * Construct app instance with choosen bundles
  */
 $app = new momentphp\App([
     app\bundle\welcome\WelcomeBundle::class => ['alias' => 'welcome'],
     momentphp\bundle\docs\DocsBundle::class => ['alias' => 'docs'],
-]);
-
-/**
- * Define paths (and optionally environment - production by default)
- */
-$app->service('pathWeb', __DIR__);
-$app->service('pathBase', $pathBase);
+], $services);
 
 /**
  * Send response to the client

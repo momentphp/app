@@ -13,13 +13,5 @@
         </div>
     </div>
 
-    {if $exception}
-        <div class="page-section -gray-300">
-            <div class="default-table">
-                {$exception}
-            </div>
-        </div>
-    {/if}
-
 {/block}
 

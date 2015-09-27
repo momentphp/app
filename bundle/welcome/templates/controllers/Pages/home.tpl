@@ -22,7 +22,7 @@
         <a href="{$this->app->config->get('bundles.welcome.url.github')}" class="action-button -fixed">GitHub</a>
     </div>
 
-    {include file='partials/debugTable.tpl'}
+    {include file='partials/debugInfo.tpl'}
 
 {/block}
 
