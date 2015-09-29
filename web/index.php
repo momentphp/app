@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Discover & require Composer autoloader
+ * Discover & require Composer autoloader (upwards in folders tree)
  */
 $pathBase = __DIR__;
 do {
@@ -14,7 +14,7 @@ do {
 } while (dirname($pathBase) !== $pathBase);
 
 /**
- * Define paths (and optionally environment - production by default)
+ * Define paths and optionally an environment (production by default)
  */
 $services = [
     'pathBase' => $pathBase,
