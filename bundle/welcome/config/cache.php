@@ -1,11 +1,18 @@
 <?php
 
+/**
+ * Cache stores config
+ */
 return [
 
-    'prefix' => app('bundles')->joinAliases(),
-
+    /**
+     * Default cache store name
+     */
     'default' => 'file',
 
+    /**
+     * Cache stores
+     */
     'stores' => [
 
         'file' => [
@@ -13,6 +20,11 @@ return [
             'path' => path([app('pathTmp'), 'cache', app('bundles')->joinAliases()]),
         ],
 
-    ]
+    ],
+
+    /**
+     * Cache key prefix
+     */
+    'prefix' => app('bundles')->joinAliases(),
 
 ];

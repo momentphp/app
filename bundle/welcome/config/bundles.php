@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Bundles config - place bundles configuration here (keyed by bundle alias)
+ */
 return [
     'welcome' => [
         'title' => 'MomentPHP',

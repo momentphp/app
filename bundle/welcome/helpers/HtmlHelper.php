@@ -2,13 +2,26 @@
 
 namespace app\bundle\welcome\helpers;
 
+/**
+ * HtmlHelper
+ */
 class HtmlHelper extends \momentphp\Helper
 {
+    /**
+     * Return HTML charset
+     *
+     * @return string
+     */
     public function charset()
     {
         return sprintf('<meta charset="%s">', $this->app->config->get('app.encoding', 'UTF-8'));
     }
 
+    /**
+     * Return HTML title
+     *
+     * @return string
+     */
     public function title()
     {
         $title = [
@@ -22,6 +35,11 @@ class HtmlHelper extends \momentphp\Helper
         return implode(' | ', $title);
     }
 
+    /**
+     * Return dynamic HTML body class
+     *
+     * @return string
+     */
     public function bodyClass()
     {
         $classes = [

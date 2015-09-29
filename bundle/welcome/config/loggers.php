@@ -1,9 +1,18 @@
 <?php
 
+/**
+ * Loggers config
+ */
 return [
 
+    /**
+     * Default logger name
+     */
     'default' => 'app',
 
+    /**
+     * Loggers
+     */
     'loggers' => [
 
         'app' => [

@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Service providers config - place service providers configuration here (keyed by provider name)
+ */
 return [
 
     'Smarty' => [
