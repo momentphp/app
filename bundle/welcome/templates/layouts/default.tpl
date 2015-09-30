@@ -5,6 +5,9 @@
     <title>{$this->Html->title()}</title>
     <meta name="description" content="{$this->app->config->get('bundles.welcome.description')}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.app = window.app || {};
+    </script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     {block 'head'}{/block}
     <link rel="stylesheet" href="/css/style.css">

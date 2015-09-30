@@ -15,16 +15,10 @@ class PagesController extends Controller
      */
     public function display($page)
     {
-        $this->view
-        ->context([$this, __METHOD__])
-        ->request($this->request)
-        ->response($this->response)
-        ->template($page);
-
-        if ($this->view->exists()) {
-            return $this->view->render();
+        try {
+            return $this->render($page);
+        } catch (\Exception $e) {
+            throw ($this->app->debug) ? $e : new \momentphp\exceptions\NotFoundException;
         }
-
-        throw new \momentphp\exceptions\NotFoundException;
     }
 }
