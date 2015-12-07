@@ -1,0 +1,12 @@
+{% if this.app.database %}
+
+    {% set queryLog = this.app.database.queryLog() %}
+
+    {% if this.app.debug and queryLog is not empty %}
+        <div class="page-section -black">
+            <h2>Database queries</h2>
+            {{ this.d(queryLog) }}
+        </div>
+    {% endif %}
+
+{% endif %}

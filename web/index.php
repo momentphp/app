@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Discover & require Composer autoloader (upwards in folders tree)
+ * Discover Composer's autoloader (upwards in folders tree)
  */
 $pathBase = __DIR__;
 do {
@@ -14,20 +14,27 @@ do {
 } while (dirname($pathBase) !== $pathBase);
 
 /**
- * Define paths and optionally an environment (production by default)
+ * Define bundles to load
  */
-$services = [
-    'pathBase' => $pathBase,
-    'pathWeb' => __DIR__,
+$bundles = [
+    momentphp\bundles\docs\Bundle::class => ['alias' => 'docs'],
+    bundles\welcome\Bundle::class => ['alias' => 'welcome'],
+    app\Bundle::class => ['alias' => 'app'],
 ];
 
 /**
- * Construct app instance with choosen bundles
+ * Define required paths and (optionally) an environment (`production` by default)
  */
-$app = new momentphp\App([
-    app\bundle\welcome\WelcomeBundle::class => ['alias' => 'welcome'],
-    momentphp\bundle\docs\DocsBundle::class => ['alias' => 'docs'],
-], $services);
+$container = [
+    'pathBase' => $pathBase,
+    'pathWeb' => __DIR__,
+    // 'env' => 'development',
+];
+
+/**
+ * Construct app
+ */
+$app = new momentphp\App($bundles, $container);
 
 /**
  * Send response to the client
