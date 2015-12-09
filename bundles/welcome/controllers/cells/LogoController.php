@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers\cells;
+namespace bundles\welcome\controllers\cells;
 
 /**
  * LogoCell
