@@ -3,7 +3,7 @@
 namespace bundles\welcome\controllers\cells;
 
 /**
- * LogoCell
+ * LogoController
  */
 class LogoController extends \momentphp\Controller
 {
