@@ -24,10 +24,9 @@ class HtmlHelper extends \momentphp\Helper
      */
     public function title()
     {
-        $title = [
-            $this->app->config->get('bundles.welcome.title'),
-            $this->app->config->get('bundles.welcome.description')
-        ];
+        $title = [];
+        $title[] = $this->app->config->get('app.title', $this->app->config->get('bundles.welcome.title', 'Untitled'));
+        $title[] = $this->app->config->get('app.description', $this->app->config->get('bundles.welcome.description', ''));
         if (!empty($this->template->vars['htmlTitle'])) {
             array_pop($title);
             array_unshift($title, $this->template->vars['htmlTitle']);
