@@ -14,6 +14,8 @@
 </head>
 <body class="{$this->Html->bodyClass()}">
 
+    {*$this->app->flash->render()*}
+
     {if $this->app->bundles('website')}
         {include file='[website]partials/tracking.tpl'}
     {/if}

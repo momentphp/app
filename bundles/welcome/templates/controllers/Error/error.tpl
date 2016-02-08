@@ -4,7 +4,7 @@
 
     <div class="page-section -white particle-ground">
         <div class="page-heading text-center">
-            <h1 class="title">500</h1>
+            <h1 class="title">{$htmlTitle}</h1>
             <p class="description">
                 Internal server error.<br>
                 Try again later.<br>
