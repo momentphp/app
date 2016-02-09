@@ -225,3 +225,49 @@ pre
 ._right { text-align: right !important; }
 ._pull-left { float: left !important; }
 ._pull-right { float: right !important; }
+
+@media all and (max-width: 767px)
+{
+    .page-heading
+    {
+        > .title
+        {
+            font-size: 54px;
+            letter-spacing: -7px;
+        }
+    }
+
+    .action-button
+    {
+        display: block;
+        width: 100% !important;
+        margin: 4px 0;
+    }
+
+    .default-table
+    {
+        overflow: auto;
+
+        table
+        {
+            th
+            {
+                white-space: normal;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            td
+            {
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+
+            th,
+            td
+            {
+                display: block;
+            }
+        }
+    }
+}

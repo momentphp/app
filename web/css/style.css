@@ -159,3 +159,30 @@ pre.sf-dump {
 ._pull-right {
   float: right !important;
 }
+@media all and (max-width: 767px) {
+  .page-heading > .title {
+    font-size: 54px;
+    letter-spacing: -7px;
+  }
+  .action-button {
+    display: block;
+    width: 100% !important;
+    margin: 4px 0;
+  }
+  .default-table {
+    overflow: auto;
+  }
+  .default-table table th {
+    white-space: normal;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .default-table table td {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .default-table table th,
+  .default-table table td {
+    display: block;
+  }
+}
