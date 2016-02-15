@@ -43,8 +43,11 @@ class HtmlHelper extends \momentphp\Helper
     {
         $classes = [
             snake_case($this->template->request->getAttribute('controller'), '-'),
-            snake_case($this->template->request->getAttribute('action'), '-'),
+            snake_case('-' . $this->template->request->getAttribute('action'), '-'),
         ];
+        if (!empty($this->template->vars['bodyClass'])) {
+            $classes[] = $this->template->vars['bodyClass'];
+        }
         return implode(' ', $classes);
     }
 }
