@@ -26,8 +26,10 @@ class ErrorController extends Controller
 
     /**
      * Invoked for errors & exceptions
+     *
+     * @param \Throwable $e
      */
-    protected function error(\Exception $e)
+    protected function error($e)
     {
         $this->set('htmlTitle', '500')->set('e', $e);
     }
