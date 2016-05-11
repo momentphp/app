@@ -2,7 +2,7 @@
     "name": "momentphp/app",
     "description": "MomentPHP | Framework app skeleton",
     "keywords": ["framework", "momentphp"],
-    "homepage": "http://momentphp.com",
+    "homepage": "http://momentphp.kminek.pl",
     "require": {
         "momentphp/framework": "*",
         "momentphp/docs": "*"
