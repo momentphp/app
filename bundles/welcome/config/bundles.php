@@ -12,8 +12,8 @@ return [
         'url' => [
             'download' => 'https://github.com/momentphp/app/archive/master.zip',
             'github' => 'https://github.com/momentphp',
-            'docs' => 'http://momentphp.com/docs',
-            'api' => 'http://momentphp.com/api'
+            'docs' => 'http://momentphp.kminek.pl/docs',
+            'api' => 'http://momentphp.kminek.pl/api'
         ],
     ],
 
