@@ -8,7 +8,7 @@ return [
     'welcome' => [
         'title' => 'MomentPHP',
         'description' => 'The PHP mini-framework based on Slim and Laravel Components',
-        'email' => 'contact@momentphp.kminek.pl',
+        'email' => 'kontakt@kminek.pl',
         'url' => [
             'download' => 'https://github.com/momentphp/app/archive/master.zip',
             'github' => 'https://github.com/momentphp',
